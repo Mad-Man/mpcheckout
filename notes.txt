@@ -1,0 +1,19 @@
+#checkout custom
+Public key: 
+TEST-8941ded4-e7bf-46f3-86f3-1aa854b41648
+Access token: 
+TEST-420574700649214-050309-b0439a2bf901dc48f6731e26fa2c1bbf__LC_LD__-161855807
+
+#checkout basico
+CLIENT_ID: 420574700649214
+CLIENT_SECRET: zHGilvxSO9IeH17atx6Y5dMeyIzuDJCI
+
+authentication >
+node api :
+var MP = require ("mercadopago");
+
+var mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
+
+mp.getAccessToken(function (err, accessToken){
+	console.log (accessToken);
+});
