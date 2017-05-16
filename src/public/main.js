@@ -1,4 +1,4 @@
-Mercadopago.setPublishableKey('TEST-8941ded4-e7bf-46f3-86f3-1aa854b41648');
+
 var doSubmit = false;
 addEvent(document.querySelector('input[data-checkout="cardNumber"]'), 'keyup', guessingPaymentMethod);
 addEvent(document.querySelector('input[data-checkout="cardNumber"]'), 'change', guessingPaymentMethod);
